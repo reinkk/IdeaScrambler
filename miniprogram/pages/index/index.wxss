@@ -1,0 +1,50 @@
+textarea {
+  width: 640rpx;
+  padding: 25rpx 0;
+  min-height:180rpx;
+}
+
+.textarea-wrp {
+  padding: 0 25rpx;
+  background-color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.page-section{
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+
+.page-section:last-child{
+  margin-bottom: 0;
+}
+
+.page-section-title{
+  font-size: 28rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin: 10px;
+}
+
+.button-hover {
+  background-color: grey;
+}
+
+.other-button-hover {
+  background-color: blue;
+}
+
+button {
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.center {
+  display:flex;
+  justify-content: center;
+}
