@@ -2,13 +2,23 @@
   <view class="page-section">
     
   <view class="page-section-title">{{textTile}}</view>
-  <view class="textarea-wrp">
-    <textarea bindblur="bindTextAreaBlur" auto-height bindinput="usrTextInput" maxlength="1000" value="{{usrText}}"/>
+
+  <view class="textarea-wrp" auto-height>
+    <textarea bindblur="bindTextAreaBlur" auto-height bindinput="usrTextInput" maxlength="200000" value="{{usrText}}"/>
+
   </view>
+
   <view class="center">
-  <button type="primary" size="mini" plain="True" bindtap="clickButton">点击打乱</button>
-<button type="warn" size="mini" plain="True" bindtap="cleanText">清空文本</button> </view>
-    <view class="page-section-title">注意：请输入半角字符。如果一个单词过长需要拆成几个部分各自打乱，您可以使用反引号“`”来分割长单词。如：输入micro`soft，单词将会按照micro+soft各自打乱，输出mcriosfot。</view>
+  <button type="primary" size="mini" plain="True" bindtap="clickButton2">一键混沌</button>
+<button type="warn" size="mini" plain="True" bindtap="cleanText">清空意念</button>
+<button type="default" size="mini" plain="True" bindtap="trySave">保存意念</button> </view>
+    <view class="page-section-title">注意：如果一个英文单词或中文短句过长需要拆成几个部分各自打乱，您可以使用斜杠“/”来分割长单词或短句。如：输入“micro/soft”，单词将会按照 “micro” 和 “soft” 两部分各自打乱，可能输出“mcriosfot”，或“mricosfot”等；输入“蒙娜丽莎/的微笑”，则输出“蒙丽娜莎的微笑”。如果您不小心拒绝过相册写入权限，无法使用保存意念功能，您可以在右上角“...”处设置，重新打开相册写入权限。</view>
+    <view class="center"><image mode='widthFix' src='../images/code.png'></image></view>
+
   </view>
 
 </view>
+
+
+<canvas canvas-id="saveImage" class='canvas' width="{{cWidth}}" height="{{cHeight}}"></canvas>
+
